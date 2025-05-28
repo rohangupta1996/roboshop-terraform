@@ -23,7 +23,7 @@ resource "null_resource" "instance" {
     connection {
       type     = "ssh"
       user     = "ec2-user"
-      password = DevOps321
+      password = "DevOps321"
       host     = aws_instance.instance.private_ip
     }
 
